@@ -1,0 +1,185 @@
+input: purchase amount, customer’s name,tax code
+output: customer’s name, purchase amount, sales tax and total amount due
+processing steps:
+Select the rightt tax code
+Take the purchased amount, multiply it by the tax code selected
+and divide the result by a 100, the result is going to be the sales tax
+Then add the sales tax  to the purchased amount  to gettthe total amount due
+
+Display: customer’s name, purchase amount, sales tax and total amount due
+
+Variables:
+name
+purchaseAmount
+salesTax
+totalAmount
+taxCode
+
+Pseudo code:
+
+if taxCode = tax exempt 
+      totalAmount = purchaseAmount  
+      salesTax = 0
+else if taxCode =   state sales tax only 
+       salesTax = (purchaseAmount * 3)/100
+       totalAmount = purchaseAmount + salesTax 
+     
+    
+else if taxCode = federal and state sales tax
+      salesTax = (purchaseAmount * 5)/100
+      totalAmount = purchaseAmount + salesTax 
+else if taxCode =  special sales tax 
+     salesTax = (purchaseAmount * 7)/100
+     totalAmount = purchaseAmount + salesTax 
+
+Display :
+name
+purchaseAmount
+salesTax
+totalAmount
+
+
+
+TEST CASES:
+CASE 1
+input:
+name = Josia
+purchaseAmount = 10
+taxCode = federal and state sales tax
+
+salesTax = (10 * 5)/100
+salesTax = 0.5
+      totalAmount = 10 + 0.5
+      totalAmount = 10.5
+
+DISPLAY:
+name = Josia
+purchaseAmount = 10
+salesTax = 0.5
+totalAmount = 10.5
+
+
+CASE 2
+input:
+name = Maria
+purchaseAmount = 55
+taxCode = special sales tax 
+
+salesTax = (55 * 7)/100
+salesTax = 3.85
+      totalAmount = 55 + 3.85
+      totalAmount = 58.85
+
+DISPLAY:
+name = Maria
+purchaseAmount = 55
+salesTax = 3.85
+totalAmount = 58.85
+
+
+
+
+2. Calculate employee's pay
+input:employee’s number, pay rate and the number of hours worked in a week.
+
+output:employee’s weekly pay and input data
+or if the information is not valid print an appropriate message and input data
+
+processing:Verify the information provided is accurate, if it is multiply the hours worked
+by the correponding hourly rate to calculate weekly pay. Print the product and the input provided.
+If employee worked overtime calculate the over time as time-and-a-half.
+
+If the information provided is wrong don't calculate weekly pay, insted display an appropiate
+message and the input data.
+
+Sequence and Selection
+
+Variables required:
+number
+payRate
+hours
+weeklyPay
+normalWeek
+overTime
+
+Pseudo Code:
+If houers > 60 or payRate > 25.00
+
+Display
+"Number of houers or pay rate is not valid, please try again"
+number
+payRate
+houers
+
+
+
+IF hours <= 60 and > 35 and payRate <= 25.00 
+normalWeek = 35 * payRate 
+overTime = (hours - 35) * (payRate + payRate/2)
+weeklyPay = normalWeek + overTime
+
+Display:
+number
+payRate
+hours
+weeklyPay
+
+ELSE
+weeklyPay = hours * payRate
+
+Display:
+Display:
+number
+payRate
+hours
+weeklyPay
+
+
+Test Cases:
+CASE 1
+input:
+number = 0502
+payRate = 10
+hours = 20
+
+Sequence and Selection
+Check for the right case, in this cas it is the THIRD case
+weeklyPay = hours * payRate
+THEN
+weeklyPay = 20 * 10
+weeklyPay = 200
+
+Display: 
+number = 0502
+payRate = 10
+hours = 20
+weeklyPay = 200
+
+
+
+CASE 2
+input:
+number = 0505
+payRate = 35
+hours = 32
+
+Check for the right case, in this cas it is the FIRST  case
+
+Display
+ "Number of hours or pay rate is not valid, please try again"
+ "Houers should be less or equal 60"
+ "Pay rate should be less or equal 25"
+
+number
+payRate
+houers
+
+
+
+
+
+
+
+
+     
+     
